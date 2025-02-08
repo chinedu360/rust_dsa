@@ -29,7 +29,7 @@ impl<T: std::fmt::Debug> Stack<T> {
     }
 
     // new methods to print all elemnets in the stack
-    fn print_stack(&self){
+    fn print_stack(&self) {
         println!("Stack {:?}", self.element);
     }
 }
@@ -42,11 +42,11 @@ pub fn stack() {
     stack.push(4);
     stack.push(5);
     println!(
-        "{:?} {:?} 
+        "{:?} {:?} {:?}
         ",
-        // stack.pop(),
+        stack.pop(),
         stack.peek(),
-        stack.is_empty(),
+        stack.is_empty()
     );
 
     stack.print_stack();
